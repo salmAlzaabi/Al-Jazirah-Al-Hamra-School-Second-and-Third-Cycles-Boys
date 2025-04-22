@@ -1,24 +1,78 @@
-
 <!DOCTYPE html>
 <html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>السلامة الرقمية</title>
-    <link rel="stylesheet" href="style.css">
+    <title>السلامة الرقمية - مدرسة الجزيرة الحمراء</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>مرحبًا في موقع السلامة الرقمية</h1>
         <nav>
-            <a href="login.html">تسجيل الدخول</a>
-            <a href="signup.html">إنشاء حساب</a>
+            <div class="logo">
+                <h1>السلامة الرقمية</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">عن السلامة الرقمية</a></li>
+                <li><a href="#resources">الموارد</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+                <li><a href="#login">تسجيل الدخول</a></li>
+                <li><a href="#signup">إنشاء حساب</a></li>
+            </ul>
         </nav>
     </header>
-    <main>
-        <h2>أهلاً بك في الموقع الذي يهتم بتعليمك السلامة الرقمية</h2>
-        <p>سوف تجد هنا العديد من الموارد المفيدة لحمايتك في العالم الرقمي.</p>
-    </main>
+
+    <section id="home">
+        <div class="home-content">
+            <h2>أهلاً بكم في موقعنا للتوعية بالسلامة الرقمية</h2>
+            <p>حافظ على خصوصيتك وآمانك على الإنترنت</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>عن السلامة الرقمية</h2>
+        <p>السلامة الرقمية تعني حماية المعلومات الشخصية على الإنترنت وضمان حماية البيانات من الهجمات السيبرانية.</p>
+    </section>
+
+    <section id="resources">
+        <h2>الموارد</h2>
+        <ul>
+            <li><a href="#">دورة تدريبية عن الحماية الرقمية</a></li>
+            <li><a href="#">أدوات مراقبة الأمان الشخصي</a></li>
+            <li><a href="#">نصائح حول حماية حسابات الإنترنت</a></li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>اتصل بنا</h2>
+        <p>يمكنك الاتصال بنا عبر البريد الإلكتروني: salmAlzaabi123@gmail.com أو الهاتف: 0509939193</p>
+    </section>
+
+    <section id="login">
+        <h2>تسجيل الدخول</h2>
+        <form action="login.html">
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">كلمة المرور:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">تسجيل الدخول</button>
+        </form>
+    </section>
+
+    <section id="signup">
+        <h2>إنشاء حساب</h2>
+        <form action="signup.html">
+            <label for="new-email">البريد الإلكتروني:</label>
+            <input type="email" id="new-email" name="new-email" required>
+            <label for="new-password">كلمة المرور:</label>
+            <input type="password" id="new-password" name="new-password" required>
+            <button type="submit">إنشاء حساب</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 مدرسة الجزيرة الحمراء. جميع الحقوق محفوظة.</p>
+    </footer>
 </body>
 </html>
-    
