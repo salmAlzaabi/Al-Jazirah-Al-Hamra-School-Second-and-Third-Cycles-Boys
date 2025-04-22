@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>السلامة الرقمية - مدرسة الجزيرة الحمراء</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
 </head>
 <body>
     <header>
@@ -51,7 +50,7 @@
 
     <section id="login">
         <h2>تسجيل الدخول</h2>
-        <form action="login.html">
+        <form id="loginForm">
             <label for="email">البريد الإلكتروني:</label>
             <input type="email" id="email" name="email" required>
             <label for="password">كلمة المرور:</label>
@@ -62,7 +61,7 @@
 
     <section id="signup">
         <h2>إنشاء حساب</h2>
-        <form action="signup.html">
+        <form id="signupForm">
             <label for="new-email">البريد الإلكتروني:</label>
             <input type="email" id="new-email" name="new-email" required>
             <label for="new-password">كلمة المرور:</label>
@@ -74,5 +73,28 @@
     <footer>
         <p>&copy; 2025 مدرسة الجزيرة الحمراء. جميع الحقوق محفوظة.</p>
     </footer>
+
+    <!-- JavaScript to handle form submission -->
+    <script>
+        // Handle login form submission
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent page refresh
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            
+            // Add validation or further logic here (e.g., check if email and password match)
+            alert('تم تسجيل الدخول بنجاح!');
+        });
+
+        // Handle signup form submission
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent page refresh
+            const email = document.getElementById('new-email').value;
+            const password = document.getElementById('new-password').value;
+            
+            // Add validation or further logic here (e.g., store data)
+            alert('تم إنشاء حساب جديد بنجاح!');
+        });
+    </script>
 </body>
 </html>
