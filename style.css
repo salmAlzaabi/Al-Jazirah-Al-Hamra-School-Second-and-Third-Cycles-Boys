@@ -1,65 +1,109 @@
-
+/* Reset styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
     color: #333;
 }
 
 header {
-    background-color: #007BFF;
+    background-color: #003366;
+    padding: 1rem 0;
     color: white;
-    padding: 20px;
+}
+
+header .logo h1 {
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: #003366;
+    padding: 1rem 0;
+    color: white;
     text-align: center;
 }
 
-header h1 {
-    margin-bottom: 20px;
-}
-
-nav a {
-    color: white;
-    margin: 10px;
-    text-decoration: none;
-}
-
-main {
-    padding: 20px;
-}
-
+/* Form Styles */
 form {
     display: flex;
     flex-direction: column;
+    gap: 1rem;
 }
 
 form label {
-    margin-bottom: 5px;
+    font-size: 1rem;
 }
 
 form input {
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
-button {
-    padding: 10px;
-    background-color: #007BFF;
+form button {
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: #003366;
     color: white;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #0056b3;
+form button:hover {
+    background-color: #0055a5;
 }
 
-p a {
-    color: #007BFF;
-    text-decoration: none;
-}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    header .logo h1 {
+        font-size: 1.5rem;
+    }
     
+    section {
+        margin: 0.5rem;
+        padding: 1.5rem;
+    }
+}
